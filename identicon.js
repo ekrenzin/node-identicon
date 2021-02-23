@@ -102,8 +102,8 @@ function render_identicon (ctx, code, size) {
     var blue = (code >> 16) & 31;
     var green = (code >> 21) & 31;
     var red = (code >> 27) & 31;
-    var foreColor = 'rgb(' + (red << 3) + ',' + (green << 3) + ',' + (blue << 3) + ')';
-    var backColor = 'rgb(255,255,255)';
+    var backColor = '#418CFC';
+    var foreColor = '#1d1b61';
 
     // middle patch
     render_identicon_patch(ctx, patchSize, patchSize, patchSize, middleType, 0, middleInvert, foreColor, backColor);
